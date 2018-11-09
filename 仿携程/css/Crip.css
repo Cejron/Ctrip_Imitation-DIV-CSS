@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(235, 228, 228);
+}
+
+/* search开始 */
+
+.search {
+    height: 45px;
+    background-color: #f6f6f6;
+    display: flex;
+}
+
+.search .search-input {
+    position: relative;
+    flex: 6;
+}
+
+.search .search-a {
+    position: relative;
+    flex: 1;
+}
+
+.search input {
+    height: 26px;
+    width: 100%;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    margin-left: 5px;
+    border: 1px solid rgb(247, 239, 239);
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px rgb(209, 208, 208);
+    text-indent: 2em;
+    outline-style: none;
+}
+
+.search-input span {
+    position: absolute;
+    display: block;
+    width: 18px;
+    height: 18px;
+    /* background-color: aqua; */
+    background-image: url("../image/mine.png");
+    background-size: 104px 326px;
+    background-position: -59px -276px;
+    z-index: 99999;
+    top: 12px;
+    left: 9px;
+}
+
+.search a {
+    display: block;
+    width: 44px;
+    height: 45px;
+    float: right;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 27px;
+    color: steelblue;
+    /* margin-right: 5px; */
+    position: relative;
+}
+
+.search a span {
+    display: block;
+    width: 24px;
+    height: 26px;
+    position: absolute;
+    top: 2px;
+    right: 50%;
+    margin-right: -14px;
+    background: url("../image/mine.png") no-repeat;
+    background-size: 104px 327px;
+    background-position: -59px -193px;
+}
+
+/* search结束 */
+
+/* slider开始 */
+
+.slider {
+    /* height: 72px; */
+    /* background: url("../image/slider.jpg") no-repeat;
+            background-size: 360px 72px; */
+    position: relative;
+}
+
+.slider ul {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.slider ul li {
+    display: inline-block;
+    list-style: none;
+    width: 6px;
+    height: 6px;
+    background-color: #eee;
+    border-radius: 3px;
+    opacity: .8;
+}
+
+/* slider结束 */
+
+.radiu {
+    border-radius: 5px;
+    margin: 5px;
+    overflow: hidden;
+}
+
+/* nav开始 */
+
+.nav {
+    height: 64px;
+    background-color: white;
+}
+
+.nav ul {
+    height: 64px;
+    display: flex;
+}
+
+.nav ul li {
+    list-style: none;
+    flex: 1;
+    text-align: center;
+}
+
+.nav ul li a {
+    display: block;
+    font-size: 12px;
+    height: 64px;
+    padding-top: 48px;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    margin: 0 5px;
+}
+
+.nav ul li a span {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: 50%;
+    margin-left: -16px;
+    background-image: url("../image/xs.png");
+    background-size: 32px auto;
+}
+
+.span1 {
+    background-position: 0 -32px;
+}
+
+.span2 {
+    background-position: 0 -64px;
+}
+
+.span3 {
+    background-position: 0 -96px;
+}
+
+.span4 {
+    background-position: 0 -128px;
+}
+
+/* nav结束 */
+
+/* main开始 */
+
+.main {
+    height: 273px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .main-item1 {
+    flex: 1;
+    background-image: linear-gradient(135deg, rgb(245, 60, 100), rgb(241, 147, 69));
+    border-bottom: 3px solid white;
+    display: flex;
+}
+
+.main>div>div {
+    flex: 1;
+}
+
+.main .main-item2 {
+    flex: 1;
+    background-image: linear-gradient(135deg, rgb(87, 123, 240), rgb(126, 187, 245));
+    border-bottom: 3px solid white;
+    display: flex;
+}
+
+.main .main-item3 {
+    flex: 1;
+    background-image: linear-gradient(135deg, rgb(10, 214, 136), rgb(32, 233, 99));
+    display: flex;
+    border-bottom: none;
+}
+
+.block {
+    border-left: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.block .block-item {
+    flex: 1;
+}
+
+.block .block-item:first-child {
+    border-bottom: 1px solid #eee;
+}
+
+.block-item a {
+    display: block;
+    line-height: 45px;
+    width: 116px;
+    height: 45px;
+    color: #eee;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.left {
+    position: relative;
+}
+
+.left a {
+    display: block;
+    width: 100%;
+    height: 89px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: 121px auto;
+    background-position: center bottom;
+}
+
+.main-item1 .left a {
+    background-image: url("../image/s.png");
+}
+
+.main-item2 .left a {
+    background-image: url("../image/flight.png");
+}
+
+.main-item3 .left a {
+    background-image: url("../image/travel.png");
+}
+
+.left a span {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    padding: 11px 0;
+    display: block;
+    width: 100%;
+}
+
+/* footer开始 */
+
+.footer {
+    background-color: #eee;
+}
+
+.footer-item {
+    height: 57px;
+    font-display: flex;
+    flex-direction: column;
+}
+
+.footer-item ul {
+    height: 57px;
+    flex: 1;
+    display: flex;
+}
+
+.footer-item ul li {
+    list-style: none;
+    flex: 1;
+}
+
+.footer-item ul li a {
+    display: block;
+    height: 57px;
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 40px;
+    position: relative;
+}
+
+.footer-item ul li a span {
+    display: block;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    left: 50%;
+    margin-left: -14px;
+    background-image: url("../image/un_ico.png");
+    background-repeat: no-repeat;
+    background-size: 28px auto;
+}
+
+.s1 {
+    background-position: 0 3px;
+}
+
+.s2 {
+    background-position: 3px -28px;
+}
+
+.s3 {
+    background-position: 2px -60px;
+}
+
+.s4 {
+    background-position: 1px -319px;
+}
+
+.s5 {
+    background-position: 1px -99px;
+}
+
+.s6 {
+    background-position: 5px -163px;
+}
+
+.s7 {
+    background-position: 1px -195px;
+}
+
+.s8 {
+    background-position: 1px -131px;
+}
+
+.s9 {
+    background-position: 0 -229px;
+}
+
+.s10 {
+    background-position: 3px -287px;
+}
+
+/* footers结束 */
